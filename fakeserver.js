@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 
 var globalCount = 1;
-// connection.query(select);
 app.use(express.json());
 app.get("/", (req, res) => {
     globalCount += 1;
